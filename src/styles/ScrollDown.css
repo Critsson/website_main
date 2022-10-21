@@ -1,0 +1,15 @@
+.down_arrow_container {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-1vw);
+    }
+    60% {
+      transform: translateY(-.5vw);
+    }
+  }

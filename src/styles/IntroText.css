@@ -1,0 +1,56 @@
+.outside_introtext_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .1vw;
+}
+
+.slides_container {
+    display: flex;
+    width: 37.7vw;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 1vw;
+}
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1vw;
+    margin-bottom: -1vw;
+    width: 37.7vw;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.first_line_wrapper {
+    display: flex;
+    gap: .7vw;
+}
+
+.name {
+    color: #AEE728;
+    font-family: "Roboto";
+    font-size: 2.8vw;
+}
+
+.line {
+    color: white;
+    font-family: "Roboto";
+    font-size: 2.8vw;
+}
+
+.line_comma {
+    color: white;
+    font-family: "Roboto";
+    font-size: 2.8vw;
+    margin-left: -.7vw;
+}
+
+.sub_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: -5vw;
+}

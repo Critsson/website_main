@@ -1,0 +1,6 @@
+.nav_wrapper {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: .5vw;
+}
