@@ -7,12 +7,12 @@ import { ScrollDown } from './ScrollDown'
 
 export const Intro = () => {
   return (
-    <Stack direction="column" alignItems="center" justifyContent="center" height="90vh" flexShrink={0} sx={{scrollSnapAlign: "start"}}>
+    <Stack id="Home" direction="column" alignItems="center" justifyContent="center" height="110vh" flexShrink={0} sx={{scrollSnapAlign: "start"}}>
         <div className="picture_wrapper">
         </div>
         <IntroTextWrapper />
         <Socials />
-        <ScrollDown />
+        <ScrollDown nextPage={"Skills"} />
     </Stack>
   )
 }

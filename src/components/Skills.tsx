@@ -1,8 +1,13 @@
 import React from 'react'
+import { ScrollUp } from "./ScrollUp"
+import { ScrollDown } from './ScrollDown'
 
 export const Skills = () => {
   return (
-    <div style={{height: "90vh", flexShrink: "0", scrollSnapAlign: "start"}}>
+    <div id="Skills" style={{ height: "110vh", flexShrink: "0", scrollSnapAlign: "start" }}>
+      <div>
+        
+      </div>
     </div>
   )
 }

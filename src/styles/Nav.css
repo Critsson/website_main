@@ -2,5 +2,6 @@
     display: flex;
     align-items: center;
     position: sticky;
-    top: .5vw;
+    top: 1vw;
+    background-color: transparent;
 }
