@@ -100,7 +100,7 @@ export const IntroText = (props: IntroTextProps) => {
                     </div>
                     <div className="sub_wrapper">
                         <h3 className="line"> who majored in&nbsp;</h3>
-                        <h3 className="name">Psycology</h3>
+                        <h3 className="name">Psycology.</h3>
                     </div>
                 </div>
 
@@ -109,8 +109,8 @@ export const IntroText = (props: IntroTextProps) => {
                         <h3 className="line">During my final year however,</h3>
                     </div>
                     <div className="sub_wrapper">
-                        <h3 className="line">I felt lost in</h3>
-                        <h3 className="name"> &nbsp;direction...</h3>
+                        <h3 className="line">I fell in love with</h3>
+                        <h3 className="name"> &nbsp;web dev.</h3>
                     </div>
                 </div>
 
