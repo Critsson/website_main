@@ -1,7 +1,7 @@
 .nav_wrapper {
     display: flex;
     align-items: center;
-    position: sticky;
+    position: absolute;
     top: 1vw;
     background-color: transparent;
 }
