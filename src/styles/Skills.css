@@ -1,0 +1,71 @@
+
+
+.skills_main_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    gap: 4vw;
+}
+
+.skills_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.skill_square {
+    background-color: white;
+    width: 10vw;
+    height: 7vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill_square_shake {
+    background-color: white;
+    width: 10vw;
+    height: 7vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shake .8s;
+}
+
+.skill_square:hover {
+    cursor: pointer;
+}
+
+.skill_square_shake:hover {
+    cursor: pointer;
+}
+
+@keyframes shake {
+
+    0%,
+    10%,
+    20%,
+    30%,
+    40%,
+    60%,
+    80%,
+    90%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    50% {
+      transform: translateX(-.5vw);
+    }
+  
+    70% {
+      transform: translateX(.5vw);
+    }
+  }

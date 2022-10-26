@@ -1,7 +1,36 @@
 .nav_wrapper {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 1vw;
+    position:absolute;
+    z-index: auto;
+    top: 1.5vh;
     background-color: transparent;
+}
+
+.nav_logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.nav_buttons_container {
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+    gap: .5vw;
+}
+
+.nav_button_container {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: .2vw .5vw;
+    border-radius: 5%;
+}
+
+.nav_button_container:hover {
+    background-color: rgba(214, 214, 214, 0.137);
+}
+
+.nav_button_container:hover {
+    cursor: pointer;
 }

@@ -22,10 +22,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div style={{
-        display: "flex", flexDirection: "column", alignItems: 'center', height: "100vh", overflowY: "hidden",
+        display: "flex", flexDirection: "column", alignItems: 'center', height: "100vh", overflow: "hidden",
         scrollSnapType: "y mandatory", scrollBehavior: "smooth"
       }}>
-        <Navbar />
+        <Navbar selectedPage="Home" />
         <Intro />
         <Skills />
         <Projects />
