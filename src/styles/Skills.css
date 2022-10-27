@@ -31,6 +31,10 @@
     justify-content: center;
 }
 
+.skills_title_container:hover {
+    cursor: default;
+}
+
 .skills_title_period {
     color: #AEE728;
 }
@@ -66,21 +70,6 @@
     cursor: pointer;
 }
 
-.modal_container {
-    position: absolute;
-    background-color: white;
-    width: 38.2vw;
-    height: 23.9vw;
-    top: 15.7vw;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.6vw 0px inset;
-    border-radius: 1%;
-    opacity: 0;
-}
-
-.hidden {
-    opacity: 0;
-    transition: opacity .3s linear;
-  }
 
 @keyframes shake {
     0%,
