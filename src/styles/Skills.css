@@ -1,12 +1,9 @@
-
-
 .skills_main_container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-    gap: 4vw;
+    margin-bottom: 4vw;
+    gap: 3.2vw;
 }
 
 .skills_container {
@@ -14,6 +11,28 @@
     align-items: center;
     justify-content: center;
     gap: 4vw;
+    margin-top: -1.8vw;
+}
+
+.skills_container_modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: -1.8vw;
+    margin-bottom: 7vw;
+}
+
+.skills_title_container {
+    font-family: "Roboto";
+    color: white;
+    font-size: 1.9vw;
+    display: flex;
+    justify-content: center;
+}
+
+.skills_title_period {
+    color: #AEE728;
 }
 
 .skill_square {
@@ -47,25 +66,46 @@
     cursor: pointer;
 }
 
-@keyframes shake {
+.modal_container {
+    position: absolute;
+    background-color: white;
+    width: 38.2vw;
+    height: 23.9vw;
+    top: 15.7vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.6vw 0px inset;
+    border-radius: 1%;
+    opacity: 0;
+}
 
+.hidden {
+    opacity: 0;
+    transition: opacity .3s linear;
+  }
+
+@keyframes shake {
     0%,
-    10%,
     20%,
     30%,
     40%,
     60%,
-    80%,
     90%,
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  
+
     50% {
-      transform: translateX(-.5vw);
+        transform: translateX(-.5vw);
     }
-  
+
+    60% {
+        transform: translateX(.5vw);
+    }
+
     70% {
-      transform: translateX(.5vw);
+        transform: translateX(-.5vw);
     }
-  }
+
+    80% {
+        transform: translateX(.5vw);
+    }
+}

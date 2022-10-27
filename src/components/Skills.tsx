@@ -7,23 +7,33 @@ import "../styles/Skills.css"
 export const Skills = () => {
 
   const [squareCounter, setSquareCounter] = React.useState<number>(0)
+  const [openedModal, setOpenedModal] = React.useState<boolean>(false)
 
   React.useEffect(() => {
     const randomNumber = Math.floor(Math.random() * 9)
     if (randomNumber !== squareCounter) {
-      setTimeout(() => setSquareCounter(randomNumber), 6000)
-    } else if(randomNumber === squareCounter && randomNumber > 0) {
-      setTimeout(() => setSquareCounter(randomNumber-1), 6000)
-    } else if(randomNumber === squareCounter && randomNumber < 8) {
-      setTimeout(() => setSquareCounter(randomNumber+1), 6000)
+      setTimeout(() => setSquareCounter(randomNumber), 8000)
+    } else if (randomNumber === squareCounter && randomNumber > 0) {
+      setTimeout(() => setSquareCounter(randomNumber - 1), 8000)
+    } else if (randomNumber === squareCounter && randomNumber < 8) {
+      setTimeout(() => setSquareCounter(randomNumber + 1), 8000)
     }
 
   }, [squareCounter])
 
   return (
     <div id="Skills" style={{ height: "110vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "2.5vh" }}>
+      {openedModal ? <div className="modal_container">
+          <button onClick={() => setOpenedModal(false)}>Delete</button>
+      </div>
+        :
+        <></>}
       <ScrollUp lastPage="Home" />
       <div className="skills_main_container">
+        <div className="skills_title_container">
+          <h1>What I Work With</h1>
+          <h1 className="skills_title_period">.</h1>
+        </div>
         <div className="skills_container">
           {squareCounter === 0 ? <div className="skill_square_shake">
             {<SiJavascript style={{ width: "4vw", height: "4vw", borderRadius: "4%", color: "#18191F" }} />}
