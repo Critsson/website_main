@@ -31,35 +31,23 @@
     justify-content: center;
 }
 
+.skills_title_container > h1 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .skills_title_container:hover {
     cursor: default;
 }
 
 .skills_title_period {
     color: #AEE728;
-}
-
-.skill_square {
-    background-color: white;
-    width: 10vw;
-    height: 7vw;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
-    border-radius: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skill_square_shake {
-    background-color: white;
-    width: 10vw;
-    height: 7vw;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
-    border-radius: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: shake .8s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .skill_square:hover {
@@ -68,33 +56,4 @@
 
 .skill_square_shake:hover {
     cursor: pointer;
-}
-
-
-@keyframes shake {
-    0%,
-    20%,
-    30%,
-    40%,
-    60%,
-    90%,
-    100% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-.5vw);
-    }
-
-    60% {
-        transform: translateX(.5vw);
-    }
-
-    70% {
-        transform: translateX(-.5vw);
-    }
-
-    80% {
-        transform: translateX(.5vw);
-    }
 }

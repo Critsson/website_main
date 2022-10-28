@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Tooltip } from "@mui/material"
 import Zoom from '@mui/material/Zoom';
 
+
 export const Socials = () => {
     return (
         <Stack direction="row" spacing=".5vw" alignItems="center" marginBottom="1.5vw">

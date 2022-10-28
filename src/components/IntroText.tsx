@@ -79,9 +79,9 @@ export const IntroText = (props: IntroTextProps) => {
                         <h3 className="line">I'm a</h3>
                         <TypeAnimation
                             sequence={[
-                                "front end developer.",
+                                "front-end developer.",
                                 1000,
-                                "back end developer.",
+                                "back-end developer.",
                                 1000,
                                 "learner.",
                                 1000
