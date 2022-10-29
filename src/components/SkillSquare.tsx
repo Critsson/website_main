@@ -6,34 +6,47 @@ import { HiServerStack } from "react-icons/hi2"
 import { MdOutlineMonitor } from "react-icons/md"
 import { Tooltip } from "@mui/material"
 import "../styles/SkillSquare.css"
+import Zoom from "@mui/material/Zoom"
 
 interface SkillsSquareProps {
     id: number,
-    squareCounter: number,
     icon: string,
     flipped: boolean,
     flip: (id: number) => void,
-    backIcons: string[]
+    backIcons: string[],
+    shakeDelay: number
 }
 
-export const SkillSquare = ({ icon, squareCounter, flipped, id, flip, backIcons }: SkillsSquareProps) => {
+
+
+
+export const SkillSquare = ({ icon, flipped, id, flip, backIcons, shakeDelay }: SkillsSquareProps) => {
+
+    const variants = {
+        unflipped: { translateX: [6, -12, 12, -12, 6], transition: { delay: shakeDelay, repeat: Infinity, repeatDelay: 74, duration: .4 } },
+        flipped: {}
+    }
 
     let iconElement;
     const backElements = backIcons.map((icon) => {
         if (icon === "Front End") {
-            return <Tooltip title="Front End">
-                <MdOutlineMonitor style={{ color: "#18191F", width: "2.5vw", height: "2.5vw" }} />
+            return <Tooltip TransitionComponent={Zoom} arrow title="Front End">
+                <motion.div>
+                    <MdOutlineMonitor className="back_icon" />
+                </motion.div>
             </Tooltip>
         } else if (icon === "Back End") {
-            return <Tooltip title="Back End">
-                <HiServerStack style={{ color: "#18191F", width: "1.9vw", height: "1.9vw" }} />
+            return <Tooltip TransitionComponent={Zoom} arrow title="Back End">
+                <div>
+                    <HiServerStack className="back_icon" />
+                </div>
             </Tooltip>
         } else if (icon === "Cloud") {
-            return <Tooltip title="Cloud"><SiIcloud style={{ color: "#18191F", width: "2vw", height: "2vw" }} /></Tooltip>
+            return <Tooltip TransitionComponent={Zoom} arrow title="Cloud"><div><SiIcloud className="back_icon" /></div></Tooltip>
         } else if (icon === "Testing") {
-            return <Tooltip title="Testing"><GiTestTubes style={{ color: "#18191F", width: "2vw", height: "2vw" }} /></Tooltip>
+            return <Tooltip TransitionComponent={Zoom} arrow title="Testing"><div><GiTestTubes className="back_icon" /></div></Tooltip>
         } else if (icon === "Database") {
-            return <Tooltip title="Databse"><GiDatabase style={{ color: "#18191F", width: "2vw", height: "2vw" }} /></Tooltip>
+            return <Tooltip TransitionComponent={Zoom} arrow title="Database"><div><GiDatabase className="back_icon" /></div></Tooltip>
         } else {
             return <></>
         }
@@ -64,12 +77,12 @@ export const SkillSquare = ({ icon, squareCounter, flipped, id, flip, backIcons 
 
     return (
         <>
-            {!flipped ? <AnimatePresence exitBeforeEnter={true}><motion.div onClick={() => flip(id)} whileTap={{ scale: .8 }} className={squareCounter === id ? "skill_square_shake" : "skill_square"}>
+            {!flipped ? <AnimatePresence exitBeforeEnter={true}><motion.div animate={!flipped ? "unflipped" : "flipped"} variants={variants} onClick={() => flip(id)} whileTap={{ scale: .8 }} className="skill_square">
                 {iconElement}
             </motion.div>
             </AnimatePresence>
                 :
-                <AnimatePresence exitBeforeEnter={true}><motion.div onClick={() => flip(id)} animate={{ rotateY: 180 }} whileTap={{ scale: .8 }} className={squareCounter === id ? "skill_square_shake" : "skill_square"}>
+                <AnimatePresence exitBeforeEnter={true}><motion.div onClick={() => flip(id)} animate={{ rotateY: 180 }} whileTap={{ scale: .8 }} className="skill_square">
                     <div className="back_icons_container">
                         {backElements}
                     </div>

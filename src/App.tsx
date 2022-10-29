@@ -14,6 +14,17 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Roboto"
+  },
+  components: {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          top: "-1.5vh",
+          display: "flex",
+          justifyContent: "center"
+        }
+      }
+    }
   }
 })
 
