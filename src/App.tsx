@@ -19,7 +19,7 @@ const theme = createTheme({
     MuiTooltip: {
       styleOverrides: {
         tooltip: {
-          top: "-1.5vh",
+          top: "-1.2vh",
           display: "flex",
           justifyContent: "center"
         }

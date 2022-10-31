@@ -77,12 +77,12 @@ export const SkillSquare = ({ icon, flipped, id, flip, backIcons, shakeDelay }: 
 
     return (
         <>
-            {!flipped ? <AnimatePresence exitBeforeEnter={true}><motion.div initial={{opacity: 0}} whileInView={{opacity:1, transition: {delay: .1}}} animate={!flipped ? "unflipped" : "flipped"} variants={variants} onClick={() => flip(id)} whileTap={{ scale: .8 }} className="skill_square">
+            {!flipped ? <AnimatePresence exitBeforeEnter={true}><motion.div initial={{opacity: 0}} whileInView={{opacity:1, transition: {delay: .15}}} animate={!flipped ? "unflipped" : "flipped"} variants={variants} onClick={() => flip(id)} whileTap={{ scale: .8 }} className="skill_square">
                 {iconElement}
             </motion.div>
             </AnimatePresence>
                 :
-                <AnimatePresence exitBeforeEnter={true}><motion.div onClick={() => flip(id)} animate={{ rotateY: 180 }} whileTap={{ scale: .8 }} className="skill_square">
+                <AnimatePresence exitBeforeEnter={true}><motion.div initial={{opacity: 0}} whileInView={{opacity:1, transition: {delay: .15}}} onClick={() => flip(id)} animate={{ rotateY: 180 }} whileTap={{ scale: .8 }} className="skill_square">
                     <div className="back_icons_container">
                         {backElements}
                     </div>
