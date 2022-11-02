@@ -6,6 +6,8 @@ import { Masonry } from '@mui/lab'
 import { ProjectTile } from './ProjectTile'
 import "../styles/Projects.css"
 
+
+
 export const Projects = () => {
   return (
     <div style={{ height: "110vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center" }} id="Projects">
