@@ -1,36 +1,68 @@
-.nav_wrapper {
-    display: flex;
-    align-items: center;
-    position:absolute;
-    z-index: auto;
-    top: 1.5vh;
-    background-color: transparent;
+@media screen and (max-width: 640px) {
+    .nav_wrapper_mobile {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: auto;
+        top: 1.5vh;
+        background-color: transparent;
+    }
+
+    .nav_logo_container_mobile {
+        display: none;
+    }
+
+    .nav_buttons_container_mobile {
+        display: flex;
+        align-items: center;
+        margin-top: 1vh;
+        gap: 6vw;
+    }
+
+    .nav_button_container_mobile {
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: .2vw .5vw;
+        border-radius: 5%;
+    }
 }
 
-.nav_logo_container {
-    display: flex;
-    align-items: center;
-}
+@media screen and (min-width: 641px) {
+    .nav_wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: auto;
+        top: 1.5vh;
+        background-color: transparent;
+    }
 
-.nav_buttons_container {
-    display: flex;
-    align-items: center;
-    margin-top: 1vh;
-    gap: .5vw;
-}
+    .nav_logo_container {
+        display: flex;
+        align-items: center;
+    }
 
-.nav_button_container {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: .2vw .5vw;
-    border-radius: 5%;
-}
+    .nav_buttons_container {
+        display: flex;
+        align-items: center;
+        margin-top: 1vh;
+        gap: .5vw;
+    }
 
-.nav_button_container:hover {
-    background-color: rgba(214, 214, 214, 0.137);
-}
+    .nav_button_container {
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: .2vw .5vw;
+        border-radius: 5%;
+    }
 
-.nav_button_container:hover {
-    cursor: pointer;
+    .nav_button_container:hover {
+        background-color: rgba(214, 214, 214, 0.137);
+    }
+
+    .nav_button_container:hover {
+        cursor: pointer;
+    }
 }

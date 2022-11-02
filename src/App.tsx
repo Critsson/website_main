@@ -36,7 +36,7 @@ function App() {
         display: "flex", flexDirection: "column", alignItems: 'center', height: "100vh", overflow: "hidden",
         scrollSnapType: "y mandatory", scrollBehavior: "smooth"
       }}>
-        <Navbar selectedPage="Home" />
+        <Navbar/>
         <Intro />
         <Skills />
         <Projects />
