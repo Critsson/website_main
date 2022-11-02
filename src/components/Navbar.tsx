@@ -2,19 +2,19 @@ import React from 'react'
 import {Typography } from "@mui/material"
 import CodeIcon from '@mui/icons-material/Code';
 import "../styles/Nav.css"
-import getWindowWidth from '../getWindowDimensions';
+import getWindowWidth from '../getWindowWidth';
 
 export const Navbar = () => {
 
     const [windowWidth, setWindowWidth] = React.useState(getWindowWidth())
 
     React.useEffect(() => {
-        function windowResize() {
+        function windowResized() {
           setWindowWidth(getWindowWidth());
         }
     
-        window.addEventListener('resize', windowResize);
-        return () => window.removeEventListener('resize', windowResize);
+        window.addEventListener('resize', windowResized);
+        return () => window.removeEventListener('resize', windowResized);
       }, [])
 
     return (

@@ -1,6 +1,8 @@
 .down_arrow_container {
-  animation: bounce 4.5s infinite ;
+  animation: bounce 4.5s infinite;
 }
+
+
 
 @keyframes bounce {
 
