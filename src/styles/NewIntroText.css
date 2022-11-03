@@ -40,7 +40,7 @@
     .new_main_wrapper {
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 72vw;
     }
 
     .new_first_line_wrapper {
@@ -52,19 +52,19 @@
     .new_name {
         color: #AEE728;
         font-family: "Roboto";
-        font-size: 5.8vw;
+        font-size: 5.3vw;
     }
 
     .new_line {
         color: white;
         font-family: "Roboto";
-        font-size: 5.8vw;
+        font-size: 5.3vw;
     }
 
     .new_line_comma {
         color: white;
         font-family: "Roboto";
-        font-size: 5.8vw;
+        font-size: 5.3vw;
         margin-left: -.7vw;
     }
 

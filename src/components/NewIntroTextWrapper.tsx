@@ -48,16 +48,16 @@ export const NewIntroTextWrapper = () => {
                     <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
                 </IconButton>
                     :
-                    <IconButton onClick={() => handleSlideDecrease()} sx={{ color: "white", height: "5vw", width: "5vw" }}>
-                        <KeyboardArrowLeftIcon sx={{ color: "white", width: "5vw", height: "5vw" }} />
+                    <IconButton onClick={() => handleSlideDecrease()} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                        <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
                     </IconButton>}
                 <NewIntroText id={slide} direction={direction} />
                 {windowWidth > 640 ? <IconButton onClick={() => handleSlideDecrease()} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
                     <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
                 </IconButton>
                     :
-                    <IconButton onClick={() => handleSlideIncrease()} sx={{ color: "white", height: "5vw", width: "5vw" }}>
-                        <KeyboardArrowRightIcon sx={{ color: "white", width: "5vw", height: "5vw" }} />
+                    <IconButton onClick={() => handleSlideIncrease()} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                        <KeyboardArrowRightIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
                     </IconButton>}
             </div>
             <div className="new_elipse_wrapper">

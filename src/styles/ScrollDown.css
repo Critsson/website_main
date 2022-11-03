@@ -1,5 +1,13 @@
-.down_arrow_container {
-  animation: bounce 4.5s infinite;
+@media screen and (min-width: 641px) {
+  .down_arrow_container {
+    animation: bounce 4.5s infinite;
+  }  
+}
+
+@media screen and (max-width: 640px) {
+  .down_arrow_container {
+    animation: bounceMobile 4.5s infinite;
+  }  
 }
 
 
@@ -18,11 +26,11 @@
   }
 
   50% {
-    transform: translateY(-.5vw);
+    transform: translateY(-2vw);
   }
 
   70% {
-    transform: translateY(-.5vw);
+    transform: translateY(-2vw);
   }
 }
 

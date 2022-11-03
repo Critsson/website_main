@@ -59,7 +59,7 @@ export const NewIntroText = ({ id, direction }: IntroTextProps) => {
                         wrapper="h3"
                         cursor={true}
                         repeat={Infinity}
-                        style={{ marginLeft: "1.3vw", fontSize: "5.8vw", fontFamily: "Roboto", color: "#AEE728" }}
+                        style={{ marginLeft: "1.3vw", fontSize: "5.3vw", fontFamily: "Roboto", color: "#AEE728" }}
                     />}
             </div>
         </motion.div></AnimatePresence>)
