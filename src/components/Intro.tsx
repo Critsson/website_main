@@ -1,4 +1,4 @@
-import { IntroTextWrapper } from "./IntroTextWrapper"
+import { NewIntroTextWrapper } from "./NewIntroTextWrapper"
 import { Socials } from "./Socials"
 import "../styles/Intro.css"
 import { ScrollDown } from './ScrollDown'
@@ -24,7 +24,8 @@ export const Intro = () => {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div className="picture_wrapper">
           </div>
-          <IntroTextWrapper />
+          {/* <IntroTextWrapper /> */}
+          <NewIntroTextWrapper />
           <Socials />
           <ScrollDown nextPage={"Skills"} />
         </div>
@@ -34,7 +35,7 @@ export const Intro = () => {
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
             <div className="picture_wrapper">
             </div>
-            <IntroTextWrapper />
+            {/* <IntroTextWrapper /> */}
             <Socials />
             <ScrollDown nextPage={"Skills"} />
           </div>
