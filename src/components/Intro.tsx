@@ -20,7 +20,7 @@ export const Intro = () => {
 
   return (
     <>
-      {windowWidth > 640 ? <div id="Home" style={{ scrollSnapAlign: "start", flexShrink: "0", height: "110vh", paddingTop: "11vh" }}>
+      {windowWidth > 640 ? <div id="Home" style={{ scrollSnapAlign: "start", flexShrink: "0", height: "100vh", paddingTop: "11vh" }}>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div className="picture_wrapper">
           </div>
@@ -30,8 +30,8 @@ export const Intro = () => {
         </div>
       </div>
         :
-        <div id="Home" style={{ scrollSnapAlign: "start", flexShrink: "0", height: "100vh", paddingTop: "20vh" }}>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div id="Home" style={{ scrollSnapAlign: "start", flexShrink: "0", height: "100vh", paddingTop: "10vh" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
             <div className="picture_wrapper">
             </div>
             <IntroTextWrapper />

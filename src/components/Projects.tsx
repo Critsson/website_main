@@ -10,7 +10,7 @@ import "../styles/Projects.css"
 
 export const Projects = () => {
   return (
-    <div style={{ height: "110vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center" }} id="Projects">
+    <div style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center" }} id="Projects">
       <ScrollUp lastPage="Skills" />
       <div className="projects_main_container">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="projects_title_container">

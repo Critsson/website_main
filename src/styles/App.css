@@ -7,3 +7,21 @@ body {
 a {
   text-decoration: none;
 }
+
+.window_container_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-height: 100vh;
+  position: absolute;
+  left: 1vw;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.window_container_mobile::-webkit-scrollbar {
+  display: none;
+}

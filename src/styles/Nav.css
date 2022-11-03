@@ -2,7 +2,8 @@
     .nav_wrapper_mobile {
         display: flex;
         align-items: center;
-        position: absolute;
+        position: sticky;
+        top: 0vh;
         background-color: #18191F;
         padding-top: 2vw;
         padding-bottom: 2vw;
@@ -37,7 +38,8 @@
     .nav_wrapper {
         display: flex;
         align-items: center;
-        position: absolute;
+        position: sticky;
+        top: 0vh;
         z-index: auto;
         top: 1.5vh;
         background-color: transparent;

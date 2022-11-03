@@ -41,15 +41,15 @@ export const Socials = () => {
                 </Tooltip>
             </Stack>
                 :
-                <Stack direction="row" spacing="1vw" alignItems="center" marginBottom="1.5vw">
+                <Stack direction="row" spacing="1vw" alignItems="center" marginBottom="10vh">
                     <a rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100005127705229">
-                        <FacebookIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                        <FacebookIcon sx={{ color: "white", width: "13vw", height: "13vw" }} />
                     </a>
                     <a rel="noreferrer" target="_blank" href="https://github.com/Critsson">
-                        <GitHubIcon sx={{ color: "#AEE728", width: "8vw", height: "8vw" }} />
+                        <GitHubIcon sx={{ color: "#AEE728", width: "13vw", height: "13vw" }} />
                     </a>
                     <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/chris-gao-579a1a233/">
-                        <LinkedInIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                        <LinkedInIcon sx={{ color: "white", width: "13vw", height: "13vw" }} />
                     </a>
                 </Stack>}
         </>

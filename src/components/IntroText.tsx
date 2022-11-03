@@ -4,6 +4,7 @@ import "../styles/IntroText.css"
 import { IconButton } from "@mui/material"
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import getWindowWidth from "../getWindowWidth"
 
 interface IntroTextProps {
     page: number,
@@ -13,56 +14,114 @@ interface IntroTextProps {
 
 export const IntroText = (props: IntroTextProps) => {
 
-    const [buttonLeft, setButtonLeft] = React.useState(<IconButton href="#4" onClick={(e) => props.pageDown(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-        <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-    </IconButton>)
-    const [buttonRight, setButtonRight] = React.useState(<IconButton href="#1" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-        <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-    </IconButton>)
+    const [windowWidth, setWindowWidth] = React.useState(getWindowWidth())
+
+    React.useEffect(() => {
+        function windowResized() {
+            setWindowWidth(getWindowWidth());
+        }
+
+        window.addEventListener('resize', windowResized);
+        return () => window.removeEventListener('resize', windowResized);
+    }, [])
+
+    const [buttonLeft, setButtonLeft] = React.useState(<></>)
+    const [buttonRight, setButtonRight] = React.useState(<></>)
 
     React.useEffect(() => {
         if (props.page === 0) {
 
-            setButtonLeft(<IconButton href="#4" onClick={(e) => {props.pageDown(e)}} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+            if (windowWidth > 640) {
+                setButtonLeft(<IconButton href="#4" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
 
-            setButtonRight(<IconButton href="#1" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+                setButtonRight(<IconButton href="#1" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
+            } else {
+                setButtonLeft(<IconButton href="#4" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+
+                setButtonRight(<IconButton href="#1" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+            }
+
 
         } else if (props.page === 1) {
-            setButtonLeft(<IconButton href="#0" onClick={(e) => props.pageDown(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+            if (windowWidth > 640) {
+                setButtonLeft(<IconButton href="#0" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
 
-            setButtonRight(<IconButton href="#2" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+                setButtonRight(<IconButton href="#2" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
+            } else {
+                setButtonLeft(<IconButton href="#0" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+
+                setButtonRight(<IconButton href="#2" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+            }
         } else if (props.page === 2) {
-            setButtonLeft(<IconButton href="#1" onClick={(e) => props.pageDown(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+            if (windowWidth > 640) {
+                setButtonLeft(<IconButton href="#1" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
 
-            setButtonRight(<IconButton href="#3" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+                setButtonRight(<IconButton href="#3" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
+            } else {
+                setButtonLeft(<IconButton href="#1" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+
+                setButtonRight(<IconButton href="#3" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+            }
         } else if (props.page === 3) {
-            setButtonLeft(<IconButton href="#2" onClick={(e) => props.pageDown(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+            if (windowWidth > 640) {
+                setButtonLeft(<IconButton href="#2" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
 
-            setButtonRight(<IconButton href="#4" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+                setButtonRight(<IconButton href="#4" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
+            } else {
+                setButtonLeft(<IconButton href="#2" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+
+                setButtonRight(<IconButton href="#4" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+            }
         } else if (props.page === 4) {
-            setButtonLeft(<IconButton href="#3" onClick={(e) => props.pageDown(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+            if (windowWidth > 640) {
+                setButtonLeft(<IconButton href="#3" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
 
-            setButtonRight(<IconButton href="#0" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
-                <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
-            </IconButton>)
+                setButtonRight(<IconButton href="#0" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
+                </IconButton>)
+            } else {
+                setButtonLeft(<IconButton href="#3" onClick={(e) => { props.pageDown(e) }} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+
+                setButtonRight(<IconButton href="#0" onClick={(e) => props.pageUp(e)} sx={{ color: "white", height: "8vw", width: "8vw" }}>
+                    <KeyboardArrowRightIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
+                </IconButton>)
+            }
         }
     }, [props.page])
 
@@ -77,7 +136,7 @@ export const IntroText = (props: IntroTextProps) => {
                     </div>
                     <div className="sub_wrapper">
                         <h3 className="line">I'm a</h3>
-                        <TypeAnimation
+                        {windowWidth > 640 ? <TypeAnimation
                             sequence={[
                                 "front-end developer.",
                                 1000,
@@ -91,6 +150,21 @@ export const IntroText = (props: IntroTextProps) => {
                             repeat={Infinity}
                             style={{ marginLeft: ".9vw", fontSize: "2.8vw", fontFamily: "Roboto", color: "#AEE728" }}
                         />
+                            :
+                            <TypeAnimation
+                                sequence={[
+                                    "front-end developer.",
+                                    1000,
+                                    "back-end developer.",
+                                    1000,
+                                    "learner.",
+                                    1000
+                                ]}
+                                wrapper="h3"
+                                cursor={true}
+                                repeat={Infinity}
+                                style={{ marginLeft: "1.3vw", fontSize: "5.8vw", fontFamily: "Roboto", color: "#AEE728" }}
+                            />}
                     </div>
                 </div>
 

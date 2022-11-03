@@ -22,7 +22,7 @@ export const ScrollUp = (props: scrollProps) => {
   }, [])
 
   return (
-    <div className="down_arrow_container">
+    <div className="up_arrow_container up_arrow_container_mobile">
       {windowWidth > 640 ? <IconButton href={`#${props.lastPage}`} sx={{ color: "white", height: "3.5vw", width: "3.5vw", }}>
         <ExpandLessIcon sx={{ color: "white", height: "3.5vw", width: "3.5vw" }} />
       </IconButton>

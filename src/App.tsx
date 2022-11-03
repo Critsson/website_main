@@ -45,8 +45,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {windowWidth > 640 ? <div style={{
-        display: "flex", flexDirection: "column", alignItems: 'center', height: "110vh", overflow: "hidden",
-        scrollSnapType: "y mandatory", scrollBehavior: "smooth"
+        display: "flex", flexDirection: "column", alignItems: 'center', height: "100vh", overflow: "hidden",
+        scrollSnapType: "y mandatory", scrollBehavior: "smooth", position: "absolute"
       }}>
         <Navbar />
         <Intro />
@@ -54,10 +54,7 @@ function App() {
         <Projects />
       </div>
         :
-        <div style={{
-          display: "flex", flexDirection: "column", alignItems: 'center', height: "100vh", overflow: "auto",
-          scrollSnapType: "y mandatory", scrollBehavior: "smooth"
-        }}>
+        <div className="window_container_mobile">
           <Navbar />
           <Intro />
           <Skills />
