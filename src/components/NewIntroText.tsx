@@ -96,11 +96,11 @@ export const NewIntroText = ({ id, direction }: IntroTextProps) => {
         } else {
             setTextElement(<AnimatePresence initial={false} mode="wait"><motion.div key={id} initial={{opacity:0}} animate={{opacity: 1}} exit={{opacity:0}} transition={{duration: .2}} className="new_main_wrapper">
                         <div className="new_first_line_wrapper">
-                            <h3 className="new_line">Thanks for stopping by and</h3>
+                            <h3 className="new_line">Stay a little bit and explore my</h3>
                         </div>
                         <div className="new_sub_wrapper">
-                            <h3 className="new_line">checking out my</h3>
-                            <h3 className="new_name"> &nbsp;progress!</h3>
+                            <h3 className="new_line">page. Thanks for</h3>
+                            <h3 className="new_name"> &nbsp;visiting!</h3>
                         </div>
                     </motion.div></AnimatePresence>)
         }
