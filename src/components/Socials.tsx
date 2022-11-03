@@ -41,7 +41,7 @@ export const Socials = () => {
                 </Tooltip>
             </Stack>
                 :
-                <Stack direction="row" spacing="1vw" alignItems="center" marginBottom="10vh">
+                <Stack direction="row" spacing="1vw" alignItems="center" marginBottom="5vh">
                     <a rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100005127705229">
                         <FacebookIcon sx={{ color: "white", width: "13vw", height: "13vw" }} />
                     </a>
