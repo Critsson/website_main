@@ -1,35 +1,76 @@
-.new_main_wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 38vw;
+@media screen and (min-width: 461px) {
+    .new_main_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 38vw;
+    }
+
+    .new_first_line_wrapper {
+        display: flex;
+        gap: .7vw;
+    }
+
+    .new_name {
+        color: #AEE728;
+        font-family: "Roboto";
+        font-size: 2.8vw;
+    }
+
+    .new_line {
+        color: white;
+        font-family: "Roboto";
+        font-size: 2.8vw;
+    }
+
+    .new_line_comma {
+        color: white;
+        font-family: "Roboto";
+        font-size: 2.8vw;
+        margin-left: -.7vw;
+    }
+
+    .new_sub_wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: -5vw;
+    }
 }
 
-.new_first_line_wrapper {
-    display: flex;
-    gap: .7vw;
-}
+@media screen and (max-width: 640px) {
+    .new_main_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
 
-.new_name {
-    color: #AEE728;
-    font-family: "Roboto";
-    font-size: 2.8vw;
-}
+    .new_first_line_wrapper {
+        display: flex;
+        gap: .7vw;
+        margin-bottom: -3vh;
+    }
 
-.new_line {
-    color: white;
-    font-family: "Roboto";
-    font-size: 2.8vw;
-}
+    .new_name {
+        color: #AEE728;
+        font-family: "Roboto";
+        font-size: 5.8vw;
+    }
 
-.new_line_comma {
-    color: white;
-    font-family: "Roboto";
-    font-size: 2.8vw;
-    margin-left: -.7vw;
-}
+    .new_line {
+        color: white;
+        font-family: "Roboto";
+        font-size: 5.8vw;
+    }
 
-.new_sub_wrapper {
-    display: flex;
-    align-items: center;
-    margin-top: -5vw;
+    .new_line_comma {
+        color: white;
+        font-family: "Roboto";
+        font-size: 5.8vw;
+        margin-left: -.7vw;
+    }
+
+    .new_sub_wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: -5vw;
+    }
 }

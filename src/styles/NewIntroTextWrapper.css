@@ -45,3 +45,50 @@
         right: 27vw;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .new_elipse_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5vw;
+        margin-bottom: 3vh;
+    }
+
+    .new_elipse {
+        width: 3vw;
+        height: 3vw;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .new_elipse_selected {
+        width: 3vw;
+        height: 3vw;
+        background-color: #AEE728;
+        border-radius: 50%;
+    }
+
+    .intro_text_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro_text_wrapper_main_container {
+        display: flex;
+        align-items: center;
+        gap: .5vw;
+    }
+
+    .left_arrow {
+        position: absolute;
+        top: calc(73%);
+        left: 27vw;
+    }
+
+    .right_arrow {
+        position: absolute;
+        top: calc(73%);
+        right: 27vw;
+    }
+}

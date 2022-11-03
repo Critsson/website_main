@@ -14,7 +14,7 @@ a {
   align-items: center; 
   max-height: 100vh;
   position: absolute;
-  left: 1vw;
+  left: 4.7vw;
   overflow: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;

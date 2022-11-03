@@ -24,7 +24,6 @@ export const Intro = () => {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div className="picture_wrapper">
           </div>
-          {/* <IntroTextWrapper /> */}
           <NewIntroTextWrapper />
           <Socials />
           <ScrollDown nextPage={"Skills"} />
@@ -35,7 +34,7 @@ export const Intro = () => {
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
             <div className="picture_wrapper">
             </div>
-            {/* <IntroTextWrapper /> */}
+            <NewIntroTextWrapper />
             <Socials />
             <ScrollDown nextPage={"Skills"} />
           </div>

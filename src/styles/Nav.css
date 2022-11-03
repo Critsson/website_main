@@ -39,10 +39,10 @@
         display: flex;
         align-items: center;
         position: sticky;
-        top: 0vh;
         z-index: auto;
-        top: 1.5vh;
+        top: 0vh;
         background-color: transparent;
+        padding-top: 1vh;
     }
 
     .nav_logo_container {

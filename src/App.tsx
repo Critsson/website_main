@@ -46,7 +46,7 @@ function App() {
     <ThemeProvider theme={theme}>
       {windowWidth > 640 ? <div style={{
         display: "flex", flexDirection: "column", alignItems: 'center', height: "100vh", overflow: "hidden",
-        scrollSnapType: "y mandatory", scrollBehavior: "smooth", position: "absolute"
+        scrollSnapType: "y mandatory", scrollBehavior: "smooth", position: "absolute", left: ".5vw"
       }}>
         <Navbar />
         <Intro />
