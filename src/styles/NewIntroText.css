@@ -40,7 +40,7 @@
     .new_main_wrapper {
         display: flex;
         flex-direction: column;
-        width: 72vw;
+        width: 72.5vw;
     }
 
     .new_first_line_wrapper {
