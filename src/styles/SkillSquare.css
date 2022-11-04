@@ -37,7 +37,7 @@
 @media screen and (max-width: 640px) {
     .skill_square {
         background-color: white;
-        width: 26vw;
+        width: 25vw;
         height: 18vw;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
         border-radius: 1%;
@@ -48,7 +48,7 @@
 
     .skill_square_shake {
         background-color: white;
-        width: 26vw;
+        width: 25vw;
         height: 18vw;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
         border-radius: 1%;
@@ -60,12 +60,12 @@
     .back_icons_container {
         display: flex;
         align-items: center;
-        gap: 1vw;
+        gap: 2vw;
     }
 
     .back_icon {
         color: #18191F;
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 7vw;
+        height: 7vw;
     }
 }

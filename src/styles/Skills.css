@@ -59,7 +59,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 34%;
+        margin-bottom: 33%;
         gap: 7vw;
     }
 
@@ -67,7 +67,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5vw;
+        margin-right: 2.5vw;
+        gap: 6vw;
         margin-top: -1.8vw;
     }
 
