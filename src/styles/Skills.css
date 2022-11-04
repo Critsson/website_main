@@ -1,52 +1,98 @@
-.skills_main_container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 7vh;
-    margin-top: -1vh;
-    gap: 3.2vw;
+@media screen and (min-width: 641px) {
+    .skills_main_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 7vh;
+        margin-top: -1vh;
+        gap: 3.2vw;
+    }
+
+    .skills_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        margin-top: -1.8vw;
+    }
+
+    .skills_title_container {
+        font-family: "Roboto";
+        color: white;
+        font-size: 1.9vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -1vh;
+    }
+
+    .skills_title_container>h1 {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .skills_title_container:hover {
+        cursor: default;
+    }
+
+    .skills_title_period {
+        color: #AEE728;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .skill_square:hover {
+        cursor: pointer;
+    }
+
+    .skill_square_shake:hover {
+        cursor: pointer;
+    }
+
 }
 
-.skills_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4vw;
-    margin-top: -1.8vw;
-}
+@media screen and (max-width: 640px) {
+    .skills_main_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 34%;
+        gap: 7vw;
+    }
 
-.skills_title_container {
-    font-family: "Roboto";
-    color: white;
-    font-size: 1.9vw;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1vh;
-}
+    .skills_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        margin-top: -1.8vw;
+    }
 
-.skills_title_container > h1 {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+    .skills_title_container {
+        font-family: "Roboto";
+        color: white;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
 
-.skills_title_container:hover {
-    cursor: default;
-}
+    .skills_title_container>h1 {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-.skills_title_period {
-    color: #AEE728;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+    .skills_title_period {
+        color: #AEE728;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-.skill_square:hover {
-    cursor: pointer;
-}
-
-.skill_square_shake:hover {
-    cursor: pointer;
 }
