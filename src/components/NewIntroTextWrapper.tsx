@@ -52,7 +52,7 @@ export const NewIntroTextWrapper = () => {
                         <KeyboardArrowLeftIcon sx={{ color: "white", width: "8vw", height: "8vw" }} />
                     </IconButton>}
                 <NewIntroText id={slide} direction={direction} />
-                {windowWidth > 640 ? <IconButton onClick={() => handleSlideDecrease()} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
+                {windowWidth > 640 ? <IconButton onClick={() => handleSlideIncrease()} sx={{ color: "white", height: "2.5vw", width: "2.5vw" }}>
                     <KeyboardArrowRightIcon sx={{ color: "white", width: "2.5vw", height: "2.5vw" }} />
                 </IconButton>
                     :

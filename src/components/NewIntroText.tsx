@@ -90,7 +90,7 @@ export const NewIntroText = ({ id, direction }: IntroTextProps) => {
                         </div>
                         <div className="new_sub_wrapper">
                             <h3 className="new_line"> self-led</h3>
-                            <h3 className="new_name" style={{ marginLeft: "1.5vw" }}>coding journey.</h3>
+                            {windowWidth > 640 ? <h3 className="new_name" style={{ marginLeft: ".7vw" }}>coding journey.</h3> : <h3 className="new_name" style={{ marginLeft: "1.5vw" }}>coding journey.</h3>}
                         </div>
                     </motion.div></AnimatePresence>)
         } else {
