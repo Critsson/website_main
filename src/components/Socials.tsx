@@ -23,7 +23,7 @@ export const Socials = () => {
 
     return (
         <>
-            {windowWidth > 640 ? <Stack direction="row" spacing=".5vw" alignItems="center" marginBottom={windowWidth > 1024 ? "1.5vw" : "1vw"}>
+            {windowWidth > 640 ? <Stack direction="row" spacing=".5vw" alignItems="center" marginBottom={windowWidth > 1024 ? "1.5vw" : ".5vw"}>
                 <Tooltip title="Facebook" TransitionComponent={Zoom} placement="left">
                     <a rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100005127705229">
                         <FacebookIcon sx={{ color: "white", width: "3vw", height: "3vw" }} />
