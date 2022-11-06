@@ -1,6 +1,16 @@
 .project_main_container {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16.5vw;
+    height: 8vw;
     border-radius: 1%;
-    width: 13vw;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.267) 0px -.3vw 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.project_main_container:hover {
+    cursor: pointer;
 }

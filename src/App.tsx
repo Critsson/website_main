@@ -5,6 +5,7 @@ import { Intro } from "./components/Intro"
 import { ThemeProvider, createTheme } from "@mui/material"
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
 import getWindowWidth from './getWindowWidth';
 
 const theme = createTheme({
@@ -52,6 +53,7 @@ function App() {
         <Intro />
         <Skills />
         <Projects />
+        <Contact />
       </div>
         :
         <div className="window_container_mobile">
@@ -59,6 +61,7 @@ function App() {
           <Intro />
           <Skills />
           <Projects />
+          <Contact />
         </div>}
     </ThemeProvider>
   )
