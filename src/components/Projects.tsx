@@ -80,79 +80,8 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-        {/* <Grid container rowGap="1vw">
-          <Grid item lg={4} xs={4}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={0}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
-              />
-            </div>
-          </Grid>
-          <Grid item lg={4} xs={4}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={1}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript", "SiNetlify"]}
-                thumbnail="thumbnails/glorious_diaries_thumbnail.JPG"
-                link="https://gloriousdiaries.netlify.app/"
-              />
-            </div>
-          </Grid>
-          <Grid item lg={4} xs={4}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={2}
-                icons={["SiReact", "SiHtml5", "SiCss3", "SiTypescript", "SiMaterialui"]}
-                thumbnail="thumbnails/personal_website_thumbnail.JPG"
-                link="https://chrisgao.netlify.app/"
-              />
-            </div>
-          </Grid>
-          <Grid item lg={4} xs={4}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={3}
-                icons={["SiReact", "SiHtml5", "SiCss3", "SiTJavascript, SiMaterialui"]}
-                thumbnail="thumbnails/dictionary_thumbnail.JPG"
-                link="https://chrisdictionary.netlify.app/"
-              />
-            </div>
-          </Grid>
-          <Grid item lg={4} xs={4}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={4}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
-              />
-            </div>
-          </Grid>
-          <Grid item lg={4} xs={4}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={5}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
-              />
-            </div>
-          </Grid>
-          <Grid item lg={12} xs={12}>
-            <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <ProjectTile
-                id={6}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
-              />
-            </div>
-          </Grid>
-        </Grid> */}
       </div>
+      <ScrollDown nextPage="Contact" />
     </div>
   )
 }
