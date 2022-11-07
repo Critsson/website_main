@@ -13,33 +13,39 @@
 
 .project_tile_hover_container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 100%;
     width: 100%;
     background-color: #18191fea;  
-    gap: 1vw;  
 }
 
 .project_tile_icon_container {
     display: flex;
     align-content: center;
     gap: .7vw;
+    margin-top: -1vw;
+    margin-bottom: 1vw;
 }
 
 .project_tile_hover_title {
     color: white;
     font-family: "Roboto";
-    margin-bottom: 0;
     font-size: 1.5vw;
 }
 
 .project_tile_hover_period {
     color: #AEE728;
     font-family: "Roboto";
-    margin-bottom: 0;
     font-size: 1.5vw;
+}
+
+.project_tile_hover_title:hover {
+    cursor: default;
+}
+
+.project_tile_hover_period:hover {
+    cursor:default
 }
 
 .project_tile_icon:hover {

@@ -82,22 +82,22 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
       </Tooltip>
     } else if (icon === "SiCss3") {
       return <Tooltip TransitionComponent={Zoom} arrow title="CSS">
-      <div className="project_tile_icon">
-        <SiCss3 style={{ color: "white", height: "2vw", width: "2vw" }} />
-      </div>
-    </Tooltip>
+        <div className="project_tile_icon">
+          <SiCss3 style={{ color: "white", height: "2vw", width: "2vw" }} />
+        </div>
+      </Tooltip>
     } else if (icon === "SiNetlify") {
       return <Tooltip TransitionComponent={Zoom} arrow title="Netlify">
-      <div className="project_tile_icon">
-        <SiNetlify style={{ color: "white", height: "2vw", width: "2vw" }} />
-      </div>
-    </Tooltip>
+        <div className="project_tile_icon">
+          <SiNetlify style={{ color: "white", height: "2vw", width: "2vw" }} />
+        </div>
+      </Tooltip>
     } else if (icon === "SiMaterialui") {
       return <Tooltip TransitionComponent={Zoom} arrow title="Material UI">
-      <div className="project_tile_icon">
-        <SiMaterialui style={{ color: "white", height: "2vw", width: "2vw" }} />
-      </div>
-    </Tooltip>
+        <div className="project_tile_icon">
+          <SiMaterialui style={{ color: "white", height: "2vw", width: "2vw" }} />
+        </div>
+      </Tooltip>
     }
   })
 
@@ -111,14 +111,16 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
         <motion.div onMouseLeave={() => handleOffHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
           <AnimatePresence>
             <motion.div className="project_tile_hover_container" key={id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .5 }} style={{ height: "100%", width: "100%" }}>
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}><Button target="_blank" href={link} sx={{ display: "flex", alignItems: "center", fontSize: "1vw", width: "5vw", height: "2vw", color: "white" }} variant="text" endIcon={<MeetingRoomIcon sx={{ width: "1.3vw", height: "1.3vw", marginBottom: ".1vw" }} />}>Visit</Button></motion.div>
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }} className="project_tile_icon_container">
-                {iconElementsArray}
-              </motion.div>
-              <motion.div style={{ display: "flex" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}>
+              <motion.div style={{ display: "flex", marginTop: "-.6vw" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}>
                 <h2 className="project_tile_hover_title">{title}</h2>
                 <h2 className="project_tile_hover_period">.</h2>
               </motion.div>
+
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }} className="project_tile_icon_container">
+                {iconElementsArray}
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}><Button target="_blank" href={link} sx={{ display: "flex", alignItems: "center", fontSize: "1vw", width: "5vw", height: "2vw", color: "white" }} variant="text" endIcon={<MeetingRoomIcon sx={{ width: "1.3vw", height: "1.3vw", marginBottom: ".1vw" }} />}>Visit</Button></motion.div>
             </motion.div>
           </AnimatePresence>
         </motion.div>
