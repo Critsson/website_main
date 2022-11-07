@@ -12,6 +12,9 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#18191F"
+    },
+    secondary: {
+      main: "#AEE728"
     }
   },
   typography: {
@@ -21,7 +24,7 @@ const theme = createTheme({
     MuiTooltip: {
       styleOverrides: {
         tooltip: {
-          top: "-1.2vh",
+          top: "-1vh",
           display: "flex",
           justifyContent: "center"
         }

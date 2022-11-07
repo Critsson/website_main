@@ -44,7 +44,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
                 thumbnail="thumbnails/climbgg_thumbnail.JPG"
                 link="https://climbgg.netlify.app/"
-                hovered={hoveredArray[0].hovered}              
+                hovered={hoveredArray[0].hovered}
+                title="LoL Statistics Site"              
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -55,7 +56,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript", "SiNetlify"]}
                 thumbnail="thumbnails/glorious_diaries_thumbnail.JPG"
                 link="https://gloriousdiaries.netlify.app/"
-                hovered={hoveredArray[1].hovered}              
+                hovered={hoveredArray[1].hovered}
+                title="Blog Site"              
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -66,7 +68,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiHtml5", "SiCss3", "SiTypescript", "SiMaterialui"]}
                 thumbnail="thumbnails/personal_website_thumbnail.JPG"
                 link="https://chrisgao.netlify.app/"
-                hovered={hoveredArray[2].hovered}              
+                hovered={hoveredArray[2].hovered}
+                title="Personal Site"              
               />
             </div>
           </div>
@@ -79,7 +82,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiHtml5", "SiCss3", "SiTJavascript, SiMaterialui"]}
                 thumbnail="thumbnails/dictionary_thumbnail.JPG"
                 link="https://chrisdictionary.netlify.app/"
-                hovered={hoveredArray[3].hovered}              
+                hovered={hoveredArray[3].hovered}
+                title="Dictionary Site"              
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -90,7 +94,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
                 thumbnail="thumbnails/climbgg_thumbnail.JPG"
                 link="https://climbgg.netlify.app/"
-                hovered={hoveredArray[4].hovered}              
+                hovered={hoveredArray[4].hovered}
+                title="LoL Statistics Site"           
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -101,7 +106,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
                 thumbnail="thumbnails/climbgg_thumbnail.JPG"
                 link="https://climbgg.netlify.app/"
-                hovered={hoveredArray[5].hovered}              
+                hovered={hoveredArray[5].hovered}
+                title="LoL Statistics Site"               
               />
             </div>
           </div>
@@ -114,7 +120,8 @@ export const Projects = () => {
                 icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
                 thumbnail="thumbnails/climbgg_thumbnail.JPG"
                 link="https://climbgg.netlify.app/"
-                hovered={hoveredArray[6].hovered}              
+                hovered={hoveredArray[6].hovered}
+                title="LoL Statistics Site"               
               />
             </div>
           </div>

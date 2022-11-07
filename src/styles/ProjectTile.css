@@ -15,8 +15,33 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: .5vw 0vw;
+    background-color: #18191fea;  
+    gap: 1vw;  
+}
+
+.project_tile_icon_container {
+    display: flex;
+    align-content: center;
+    gap: .7vw;
+}
+
+.project_tile_hover_title {
+    color: white;
+    font-family: "Roboto";
+    margin-bottom: 0;
+    font-size: 1.5vw;
+}
+
+.project_tile_hover_period {
+    color: #AEE728;
+    font-family: "Roboto";
+    margin-bottom: 0;
+    font-size: 1.5vw;
+}
+
+.project_tile_icon:hover {
+    cursor: pointer;
 }
