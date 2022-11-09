@@ -1,53 +1,114 @@
-.project_main_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 29vw;
-    height: 14.5vw;
-    border-radius: 1%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+@media screen and (min-width: 641px) {
+    .project_main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 16.5vw;
+        height: 8vw;
+        border-radius: 1%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    
+    .project_tile_hover_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: #18191fea;  
+    }
+    
+    .project_tile_icon_container {
+        display: flex;
+        align-content: center;
+        gap: .7vw;
+        margin-top: -.5vw;
+        margin-bottom: .8vw;
+    }
+    
+    .project_tile_hover_title {
+        color: white;
+        font-family: "Roboto";
+        font-size: 1.5vw;
+    }
+    
+    .project_tile_hover_period {
+        color: #AEE728;
+        font-family: "Roboto";
+        font-size: 1.5vw;
+    }
+    
+    .project_tile_hover_title:hover {
+        cursor: default;
+    }
+    
+    .project_tile_hover_period:hover {
+        cursor:default
+    }
+    
+    .project_tile_icon:hover {
+        cursor: pointer;
+    }
 }
 
-.project_tile_hover_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #18191fea;  
+@media screen and (max-width: 640px) {
+    .project_main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 29vw;
+        height: 14.5vw;
+        border-radius: 1%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    
+    .project_tile_hover_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: #18191fea; 
+    }
+    
+    .project_tile_icon_container {
+        display: flex;
+        align-content: center;
+        gap: .7vw;
+        margin-top: -2vw;
+        margin-bottom: .5vw;
+    }
+    
+    .project_tile_hover_title {
+        color: white;
+        font-family: "Roboto";
+        font-size: 3vw;
+        margin-top: 1.5vw;
+    }
+    
+    .project_tile_hover_period {
+        color: #AEE728;
+        font-family: "Roboto";
+        font-size: 3vw;
+        margin-top: 1.5vw;
+    }
+    
+    .project_tile_hover_title:hover {
+        cursor: default;
+    }
+    
+    .project_tile_hover_period:hover {
+        cursor:default
+    }
+    
+    .project_tile_icon:hover {
+        cursor: pointer;
+    }
 }
 
-.project_tile_icon_container {
-    display: flex;
-    align-content: center;
-    gap: .7vw;
-    margin-top: -.5vw;
-    margin-bottom: .8vw;
-}
-
-.project_tile_hover_title {
-    color: white;
-    font-family: "Roboto";
-    font-size: 1.5vw;
-}
-
-.project_tile_hover_period {
-    color: #AEE728;
-    font-family: "Roboto";
-    font-size: 1.5vw;
-}
-
-.project_tile_hover_title:hover {
-    cursor: default;
-}
-
-.project_tile_hover_period:hover {
-    cursor:default
-}
-
-.project_tile_icon:hover {
-    cursor: pointer;
-}
