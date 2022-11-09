@@ -8,29 +8,29 @@ import "../styles/Projects.css"
 
 export const Projects = () => {
 
-  const [hoveredArray, setHoveredArray] = React.useState([{id: 0, hovered: false}, {id: 1, hovered: false}, {id: 2, hovered: false},{id: 3, hovered: false},{id: 4, hovered: false},{id: 5, hovered: false},{id: 6, hovered: false}])
+  const [hoveredArray, setHoveredArray] = React.useState([{ id: 0, hovered: false }, { id: 1, hovered: false }, { id: 2, hovered: false }, { id: 3, hovered: false }, { id: 4, hovered: false }, { id: 5, hovered: false }, { id: 6, hovered: false }])
 
   const handleOnHover = (id: number) => {
-      setHoveredArray((prevState) => {
-          const holder = [...prevState]
-          holder[id] = {id: id, hovered: true}
-          return holder
-      })
+    setHoveredArray((prevState) => {
+      const holder = [...prevState]
+      holder[id] = { id: id, hovered: true }
+      return holder
+    })
   }
 
   const handleOffHover = (id: number) => {
     setHoveredArray((prevState) => {
-        const holder = [...prevState]
-        holder[id] = {id: id, hovered: false}
-        return holder
+      const holder = [...prevState]
+      holder[id] = { id: id, hovered: false }
+      return holder
     })
-}
+  }
 
   return (
-    <div style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "2vh" }} id="Projects">
+    <div style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "6.5vh" }} id="Projects">
       <ScrollUp lastPage="Skills" />
       <div className="projects_main_container">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="projects_title_container">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="projects_title_container">
           <h1>What I've Created</h1>
           <h1 className="projects_title_period">.</h1>
         </motion.div>
@@ -41,11 +41,11 @@ export const Projects = () => {
                 handleOnHover={handleOnHover}
                 handleOffHover={handleOffHover}
                 id={hoveredArray[0].id}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
+                icons={["SiJavascript", "SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiRiotgames"]}
                 thumbnail="thumbnails/climbgg_thumbnail.JPG"
                 link="https://climbgg.netlify.app/"
                 hovered={hoveredArray[0].hovered}
-                title="LoL Statistics Site"              
+                title="LoL Statistics Site"
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -53,11 +53,11 @@ export const Projects = () => {
                 handleOnHover={handleOnHover}
                 handleOffHover={handleOffHover}
                 id={hoveredArray[1].id}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript", "SiNetlify"]}
+                icons={["SiJavascript", "SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiNetlify"]}
                 thumbnail="thumbnails/glorious_diaries_thumbnail.JPG"
                 link="https://gloriousdiaries.netlify.app/"
                 hovered={hoveredArray[1].hovered}
-                title="Blog Site"              
+                title="Blog Site"
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -69,7 +69,7 @@ export const Projects = () => {
                 thumbnail="thumbnails/personal_website_thumbnail.JPG"
                 link="https://chrisgao.netlify.app/"
                 hovered={hoveredArray[2].hovered}
-                title="Personal Site"              
+                title="Personal Site"
               />
             </div>
           </div>
@@ -79,11 +79,11 @@ export const Projects = () => {
                 handleOnHover={handleOnHover}
                 handleOffHover={handleOffHover}
                 id={hoveredArray[3].id}
-                icons={["SiReact", "SiHtml5", "SiCss3", "SiTJavascript, SiMaterialui"]}
-                thumbnail="thumbnails/dictionary_thumbnail.JPG"
-                link="https://chrisdictionary.netlify.app/"
+                icons={["SiTypescript", "SiReact", "SiJavascript", "SiExpress", "SiNodedotjs", "SiAmazonaws"]}
+                thumbnail="thumbnails/todo_app_thumbnail.JPG"
+                link="https://christodoapp.netlify.app/"
                 hovered={hoveredArray[3].hovered}
-                title="Dictionary Site"              
+                title="Todo App"
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -91,11 +91,11 @@ export const Projects = () => {
                 handleOnHover={handleOnHover}
                 handleOffHover={handleOffHover}
                 id={hoveredArray[4].id}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
+                icons={["SiReact", "SiHtml5", "SiCss3", "SiJavascript", "BsCloudSun"]}
+                thumbnail="thumbnails/weather_app_thumbnail.JPG"
+                link="https://chrisweatherapp.netlify.app/"
                 hovered={hoveredArray[4].hovered}
-                title="LoL Statistics Site"           
+                title="Weather Site"
               />
             </div>
             <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -103,11 +103,11 @@ export const Projects = () => {
                 handleOnHover={handleOnHover}
                 handleOffHover={handleOffHover}
                 id={hoveredArray[5].id}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
+                icons={["SiReact", "SiHtml5", "SiCss3", "SiJavascript", "SiMaterialui", "DictionaryAPI"]}
+                thumbnail="thumbnails/dictionary_thumbnail.JPG"
+                link="https://chrisdictionary.netlify.app/"
                 hovered={hoveredArray[5].hovered}
-                title="LoL Statistics Site"               
+                title="Dictionary Site"
               />
             </div>
           </div>
@@ -117,17 +117,17 @@ export const Projects = () => {
                 handleOnHover={handleOnHover}
                 handleOffHover={handleOffHover}
                 id={hoveredArray[6].id}
-                icons={["SiReact", "SiNextdotjs", "SiHtml5", "SiCss3", "SiJavascript"]}
-                thumbnail="thumbnails/climbgg_thumbnail.JPG"
-                link="https://climbgg.netlify.app/"
+                icons={["SiJavascript", "SiHtml5", "SiCss3"]}
+                thumbnail="thumbnails/wordle_clone_thumbnail.JPG"
+                link="https://chriswordleclone.netlify.app/"
                 hovered={hoveredArray[6].hovered}
-                title="LoL Statistics Site"               
+                title="Wordle Clone"
               />
             </div>
           </div>
         </div>
       </div>
-      <ScrollDown nextPage="Contact" />
+      <ScrollDown nextPage="Resume" />
     </div>
   )
 }

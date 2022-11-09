@@ -23,7 +23,7 @@ export const Navbar = () => {
                 <CodeIcon sx={{ color: "#AEE728", fontSize: "4vw" }} />
                 <Typography sx={{ color: "white", fontSize: "4vw", fontWeight: "700", "&:hover": { cursor: "default" } }} variant="h1">Chris</Typography>
             </div>
-            {windowWidth > 640 && <Typography sx={{ color: "#AEE728", fontSize: "4vw", fontWeight: "700", marginBottom: "-.5vw", "&:hover": { cursor: "default" }, marginRight: "58vw" }} variant="h1">.</Typography>}
+            {windowWidth > 640 && <Typography sx={{ color: "#AEE728", fontSize: "4vw", fontWeight: "700", marginBottom: "-.5vw", "&:hover": { cursor: "default" }, marginRight: "57.8vw" }} variant="h1">.</Typography>}
             <div className="nav_buttons_container nav_buttons_container_mobile">
                 <a href="#Home" className="nav_button_container nav_button_container_mobile">
                     {windowWidth > 640 ? <><Typography variant="h3" sx={{ fontSize: "1.5vw", fontWeight: "700" }}>Home</Typography>
@@ -46,8 +46,8 @@ export const Navbar = () => {
                     <Typography variant="h3" sx={{ color: "#AEE728", fontSize: "5.8vw", marginBottom: ".1vw", fontWeight: "700" }}>.</Typography></>}
                 </a>
 
-                <a href="#Contact" className="nav_button_container nav_button_container_mobile">
-                    {windowWidth > 640 ? <><Typography variant="h3" sx={{ fontSize: "1.5vw", fontWeight: "700" }}>Contact</Typography>
+                <a href="#Resume" className="nav_button_container nav_button_container_mobile">
+                    {windowWidth > 640 ? <><Typography variant="h3" sx={{ fontSize: "1.5vw", fontWeight: "700" }}>Resume</Typography>
                     <Typography variant="h3" sx={{ color: "#AEE728", fontSize: "2.3vw", marginBottom: ".55vw", fontWeight: "700" }}>.</Typography></>
                     : <><Typography variant="h3" sx={{ fontSize: "5vw", fontWeight: "700" }}>Contact</Typography>
                     <Typography variant="h3" sx={{ color: "#AEE728", fontSize: "5.8vw", marginBottom: ".1vw", fontWeight: "700" }}>.</Typography></>}

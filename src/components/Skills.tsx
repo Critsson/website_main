@@ -37,7 +37,7 @@ export const Skills = () => {
       {windowWidth > 640 ? <div id="Skills" style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "2vh" }}>
         <ScrollUp lastPage="Home" />
         <div className="skills_main_container">
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="skills_title_container">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} viewport={{once: true}} className="skills_title_container">
             <h1>What I Work With</h1>
             <h1 className="skills_title_period">.</h1>
           </motion.div>
@@ -63,7 +63,7 @@ export const Skills = () => {
         <div id="Skills" style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "7vh" }}>
           <ScrollUp lastPage="Home" />
           <div className="skills_main_container">
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="skills_title_container">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="skills_title_container">
               <h1>What I Work With</h1>
               <h1 className="skills_title_period">.</h1>
             </motion.div>

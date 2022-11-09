@@ -24,7 +24,7 @@ export const ScrollUp = (props: scrollProps) => {
 
   return (
     <AnimatePresence>
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="up_arrow_container up_arrow_container_mobile">
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="up_arrow_container up_arrow_container_mobile">
         {windowWidth > 640 ? <IconButton href={`#${props.lastPage}`} sx={{ color: "white", height: "3.5vw", width: "3.5vw", }}>
           <ExpandLessIcon sx={{ color: "white", height: "3.5vw", width: "3.5vw" }} />
         </IconButton>

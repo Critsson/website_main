@@ -24,7 +24,7 @@ export const ScrollDown = (props: scrollProps) => {
 
   return (
     <AnimatePresence initial={false}>
-      <motion.div initial={{opacity: 0}} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="down_arrow_container">
+      <motion.div initial={{opacity: 0}} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="down_arrow_container">
         {windowWidth > 640 ? <IconButton href={`#${props.nextPage}`} sx={{ color: "white", height: "3.5vw", width: "3.5vw" }}>
           <ExpandMoreIcon sx={{ color: "white", height: "3.5vw", width: "3.5vw" }} />
         </IconButton>

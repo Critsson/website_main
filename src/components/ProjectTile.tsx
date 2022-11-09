@@ -1,10 +1,12 @@
 import React from 'react'
 import "../styles/ProjectTile.css"
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiExpress, SiNodedotjs, SiJest, SiPostgresql, SiAmazonaws, SiHtml5, SiCss3, SiNetlify, SiMaterialui } from "react-icons/si"
+import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiExpress, SiNodedotjs, SiJest, SiPostgresql, SiAmazonaws, SiHtml5, SiCss3, SiNetlify, SiMaterialui, SiRiotgames } from "react-icons/si"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button, Tooltip } from "@mui/material"
 import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
 import Zoom from "@mui/material/Zoom"
+import { TbApi } from "react-icons/tb"
+import {BsCloudSun} from "react-icons/bs"
 
 interface ProjectTileProps {
   id: number
@@ -87,7 +89,7 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
         </div>
       </Tooltip>
     } else if (icon === "SiNetlify") {
-      return <Tooltip TransitionComponent={Zoom} arrow title="Netlify">
+      return <Tooltip TransitionComponent={Zoom} arrow title="Netlify CMS">
         <div className="project_tile_icon">
           <SiNetlify style={{ color: "white", height: "2vw", width: "2vw" }} />
         </div>
@@ -98,6 +100,24 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
           <SiMaterialui style={{ color: "white", height: "2vw", width: "2vw" }} />
         </div>
       </Tooltip>
+    } else if (icon === "SiRiotgames") {
+      return <Tooltip TransitionComponent={Zoom} arrow title="Riot API">
+        <div className="project_tile_icon">
+          <SiRiotgames style={{ color: "white", height: "2vw", width: "2vw" }} />
+        </div>
+      </Tooltip>
+    } else if (icon === "DictionaryAPI") {
+      return <Tooltip TransitionComponent={Zoom} arrow title="Free Dictionary API">
+        <div className="project_tile_icon">
+          <TbApi style={{ color: "white", height: "2vw", width: "2vw" }} />
+        </div>
+      </Tooltip>
+    } else if (icon === "BsCloudSun") {
+      return <Tooltip TransitionComponent={Zoom} arrow title="Open-Meteo API">
+        <div className="project_tile_icon">
+          <BsCloudSun style={{ color: "white", height: "2vw", width: "2vw" }} />
+        </div>
+      </Tooltip>
     }
   })
 
@@ -105,13 +125,13 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
   return (
     <>
       {hovered === false ?
-        <motion.div onMouseEnter={() => handleOnHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
+        <motion.div onMouseEnter={() => handleOnHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
         </motion.div>
         :
-        <motion.div onMouseLeave={() => handleOffHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
+        <motion.div onMouseLeave={() => handleOffHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
           <AnimatePresence>
             <motion.div className="project_tile_hover_container" key={id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .5 }} style={{ height: "100%", width: "100%" }}>
-              <motion.div style={{ display: "flex", marginTop: "-.6vw" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}>
+              <motion.div style={{ display: "flex", marginTop: "-.7vw" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}>
                 <h2 className="project_tile_hover_title">{title}</h2>
                 <h2 className="project_tile_hover_period">.</h2>
               </motion.div>
