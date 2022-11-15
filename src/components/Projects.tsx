@@ -1,5 +1,4 @@
 import React from 'react'
-import { ScrollDown } from './ScrollDown'
 import { ScrollUp } from './ScrollUp'
 import { motion } from "framer-motion"
 import { ProjectTile } from './ProjectTile'
@@ -95,7 +94,7 @@ export const Projects = () => {
                   thumbnail="thumbnails/todo_app_thumbnail.JPG"
                   link="https://christodoapp.netlify.app/"
                   hovered={hoveredArray[3].hovered}
-                  title="Todo App"
+                  title="To-do App"
                 />
               </div>
               <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -139,7 +138,6 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-        <ScrollDown nextPage="Resume" />
       </div>
         :
         <div style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "7vh" }} id="Projects">
@@ -198,7 +196,7 @@ export const Projects = () => {
                     thumbnail="thumbnails/todo_app_thumbnail.JPG"
                     link="https://christodoapp.netlify.app/"
                     hovered={hoveredArray[3].hovered}
-                    title="Todo App"
+                    title="To-do App"
                   />
                 </div>
                 <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -242,7 +240,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          <ScrollDown nextPage="Resume" />
         </div>}
     </>
   )
