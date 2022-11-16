@@ -133,6 +133,8 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
             <BsCloudSun style={{ color: "white", height: "2vw", width: "2vw" }} />
           </div>
         </Tooltip>
+      } else {
+        return <></>
       }
     })
 
@@ -234,6 +236,8 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
             <BsCloudSun style={{ color: "white", height: "3.8vw", width: "3.8vw" }} />
           </div>
         </Tooltip>
+      } else {
+        return <></>
       }
     })
   }
