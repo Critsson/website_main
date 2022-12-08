@@ -46,7 +46,7 @@ export const Navbar = () => {
                     <Typography variant="h3" sx={{ color: "#AEE728", fontSize: "5.8vw", marginBottom: ".1vw", fontWeight: "700" }}>.</Typography></>}
                 </a>
 
-                <a href="https://drive.google.com/file/d/1ztBPv3HgScq4o5s1KBJKdx5iFgCuL2em/view?usp=share_link" target="_blank" rel="noreferrer" className="nav_button_container nav_button_container_mobile">
+                <a href="https://drive.google.com/file/d/1TfTXZJlfc2jfWPKIcdBcL3X8yQPCutKa/view?usp=sharing" target="_blank" rel="noreferrer" className="nav_button_container nav_button_container_mobile">
                     {windowWidth > 640 ? <><Typography variant="h3" sx={{ fontSize: "1.5vw", fontWeight: "700" }}>Resume</Typography>
                     <Typography variant="h3" sx={{ color: "#AEE728", fontSize: "2.3vw", marginBottom: ".55vw", fontWeight: "700" }}>.</Typography></>
                     : <><Typography variant="h3" sx={{ fontSize: "5vw", fontWeight: "700" }}>Resume</Typography>
