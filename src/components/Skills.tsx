@@ -3,7 +3,6 @@ import { ScrollUp } from "./ScrollUp"
 import { ScrollDown } from './ScrollDown'
 import "../styles/Skills.css"
 import { SkillSquare } from './SkillSquare'
-import { motion } from "framer-motion"
 import getWindowWidth from '../getWindowWidth'
 
 export const Skills = () => {
@@ -37,10 +36,10 @@ export const Skills = () => {
       {windowWidth > 640 ? <div id="Skills" style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "2vh" }}>
         <ScrollUp lastPage="Home" />
         <div className="skills_main_container">
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .15 } }} viewport={{once: true}} className="skills_title_container">
+          <div className="skills_title_container">
             <h1>What I Work With</h1>
             <h1 className="skills_title_period">.</h1>
-          </motion.div>
+          </div>
           <div className="skills_container">
             <SkillSquare shakeDelay={50} flip={flip} id={0} icon="Javascript" backIcons={["Back End", "Front End"]} flipped={flippedArray[0]} />
             <SkillSquare shakeDelay={2} flip={flip} id={1} icon="React" backIcons={["Front End"]} flipped={flippedArray[1]} />
@@ -63,10 +62,10 @@ export const Skills = () => {
         <div id="Skills" style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "7vh" }}>
           <ScrollUp lastPage="Home" />
           <div className="skills_main_container">
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{once: true}} className="skills_title_container">
+            <div className="skills_title_container">
               <h1>What I Work With</h1>
               <h1 className="skills_title_period">.</h1>
-            </motion.div>
+            </div>
             <div className="skills_container">
               <SkillSquare shakeDelay={50} flip={flip} id={0} icon="Javascript" backIcons={["Back End", "Front End"]} flipped={flippedArray[0]} />
               <SkillSquare shakeDelay={2} flip={flip} id={1} icon="React" backIcons={["Front End"]} flipped={flippedArray[1]} />

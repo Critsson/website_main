@@ -41,10 +41,10 @@ export const Projects = () => {
       {windowWidth > 640 ? <div style={{ height: "100vh", flexShrink: "0", scrollSnapAlign: "start", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "2vh" }} id="Projects">
         <ScrollUp lastPage="Skills" />
         <div className="projects_main_container">
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{ once: true }} className="projects_title_container">
+          <div className="projects_title_container">
             <h1>What I've Created</h1>
             <h1 className="projects_title_period">.</h1>
-          </motion.div>
+          </div>
           <div className="projects_flex_container">
             <div className="projects_row_container">
               <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>

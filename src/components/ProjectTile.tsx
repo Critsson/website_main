@@ -246,10 +246,10 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
   return (
     <>
       {hovered === false ?
-        <motion.div onMouseEnter={() => handleOnHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{ once: true }} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
+        <motion.div onMouseEnter={() => handleOnHover(id)} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
         </motion.div>
         :
-        <motion.div onMouseLeave={() => handleOffHover(id)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2 } }} viewport={{ once: true }} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
+        <motion.div onMouseLeave={() => handleOffHover(id)} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
           <AnimatePresence>
             <motion.div className="project_tile_hover_container" key={id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .5 }} style={{ height: "100%", width: "100%" }}>
               <motion.div style={{ display: "flex", marginTop: "-.7vw" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}>
