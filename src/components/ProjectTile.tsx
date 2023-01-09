@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/ProjectTile.css"
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiExpress, SiNodedotjs, SiJest, SiPostgresql, SiAmazonaws, SiHtml5, SiCss3, SiNetlify, SiMaterialui, SiRiotgames } from "react-icons/si"
+import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiExpress, SiNodedotjs, SiJest, SiPostgresql, SiAmazonaws, SiHtml5, SiCss3, SiNetlify, SiMaterialui, SiRiotgames, SiLinux } from "react-icons/si"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button, Tooltip } from "@mui/material"
 import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
@@ -133,6 +133,12 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
             <BsCloudSun style={{ color: "white", height: "2vw", width: "2vw" }} />
           </div>
         </Tooltip>
+      } else if (icon === "SiLinux") {
+        return <Tooltip TransitionComponent={Zoom} arrow title="Linux">
+          <div className="project_tile_icon">
+            <SiLinux style={{ color: "white", height: "2vw", width: "2vw" }} />
+          </div>
+        </Tooltip>
       } else {
         return <></>
       }
@@ -251,20 +257,20 @@ export const ProjectTile = ({ id, icons, thumbnail, link, hovered, handleOnHover
         :
         <motion.div onMouseLeave={() => handleOffHover(id)} className="project_main_container" style={{ backgroundImage: `url(/${thumbnail})` }}>
           <AnimatePresence>
-            <motion.div className="project_tile_hover_container" key={id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .5 }} style={{ height: "100%", width: "100%" }}>
-              <motion.div style={{ display: "flex", marginTop: "-.7vw" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}>
+            <motion.div className="project_tile_hover_container" key={id} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .3 }} style={{ height: "100%", width: "100%" }}>
+              <motion.div style={{ display: "flex", marginTop: "-.7vw" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .1 }}>
                 <h2 className="project_tile_hover_title">{title}</h2>
                 <h2 className="project_tile_hover_period">.</h2>
               </motion.div>
 
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }} className="project_tile_icon_container">
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .1 }} className="project_tile_icon_container">
                 {iconElementsArray}
               </motion.div>
 
               {windowWidth > 640 ?
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}><Button target="_blank" href={link} sx={{ display: "flex", alignItems: "center", fontSize: "1vw", width: "5vw", height: "2vw", color: "white" }} variant="text" endIcon={<MeetingRoomIcon sx={{ width: "1.3vw", height: "1.3vw", marginBottom: ".1vw" }} />}>Visit</Button></motion.div>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .1 }}><Button target="_blank" href={link} sx={{ display: "flex", alignItems: "center", fontSize: "1vw", width: "5vw", height: "2vw", color: "white" }} variant="text" endIcon={<MeetingRoomIcon sx={{ width: "1.3vw", height: "1.3vw", marginBottom: ".1vw" }} />}>Visit</Button></motion.div>
                 :
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .3 }}><Button target="_blank" href={link} sx={{ display: "flex", alignItems: "center", fontSize: "2.5vw", width: "5vw", height: "2vw", color: "white"}} variant="text" endIcon={<MeetingRoomIcon sx={{ width: "3vw", height: "3vw", marginBottom: ".1vw", marginLeft: "-1.5vw" }} />}>Visit</Button></motion.div>}
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .1 }}><Button target="_blank" href={link} sx={{ display: "flex", alignItems: "center", fontSize: "2.5vw", width: "5vw", height: "2vw", color: "white"}} variant="text" endIcon={<MeetingRoomIcon sx={{ width: "3vw", height: "3vw", marginBottom: ".1vw", marginLeft: "-1.5vw" }} />}>Visit</Button></motion.div>}
             </motion.div>
           </AnimatePresence>
         </motion.div>

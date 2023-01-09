@@ -8,7 +8,7 @@ import getWindowWidth from '../getWindowWidth'
 
 export const Projects = () => {
 
-  const [hoveredArray, setHoveredArray] = React.useState([{ id: 0, hovered: false }, { id: 1, hovered: false }, { id: 2, hovered: false }, { id: 3, hovered: false }, { id: 4, hovered: false }, { id: 5, hovered: false }, { id: 6, hovered: false }])
+  const [hoveredArray, setHoveredArray] = React.useState([{ id: 0, hovered: false }, { id: 1, hovered: false }, { id: 2, hovered: false }, { id: 3, hovered: false }, { id: 4, hovered: false }, { id: 5, hovered: false }, { id: 6, hovered: false }, { id: 7, hovered: false }])
   const [windowWidth, setWindowWidth] = React.useState(getWindowWidth())
 
   React.useEffect(() => {
@@ -76,11 +76,11 @@ export const Projects = () => {
                   handleOnHover={handleOnHover}
                   handleOffHover={handleOffHover}
                   id={hoveredArray[2].id}
-                  icons={["SiReact", "SiHtml5", "SiCss3", "SiTypescript", "SiMaterialui"]}
-                  thumbnail="thumbnails/personal_website_thumbnail.JPG"
-                  link="https://chrisgao.netlify.app/"
+                  icons={["SiTypescript", "SiReact", "SiPostgresql", "SiExpress", "SiLinux", "SiNextdotjs"]}
+                  thumbnail="thumbnails/chainlink_thumbnail.JPG"
+                  link="https://chainlink.chrisgao.dev"
                   hovered={hoveredArray[2].hovered}
-                  title="Personal Site"
+                  title="Link in Bio App"
                 />
               </div>
             </div>
@@ -135,6 +135,18 @@ export const Projects = () => {
                   title="Wordle Clone"
                 />
               </div>
+              <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <ProjectTile
+                  handleOnHover={handleOnHover}
+                  handleOffHover={handleOffHover}
+                  id={hoveredArray[7].id}
+                  icons={["SiReact", "SiHtml5", "SiCss3", "SiTypescript", "SiMaterialui"]}
+                  thumbnail="thumbnails/personal_website_thumbnail.JPG"
+                  link="https://chrisgao.netlify.app/"
+                  hovered={hoveredArray[7].hovered}
+                  title="Personal Site"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -178,11 +190,11 @@ export const Projects = () => {
                     handleOnHover={handleOnHover}
                     handleOffHover={handleOffHover}
                     id={hoveredArray[2].id}
-                    icons={["SiReact", "SiHtml5", "SiCss3", "SiTypescript", "SiMaterialui"]}
-                    thumbnail="thumbnails/personal_website_thumbnail.JPG"
-                    link="https://chrisgao.netlify.app/"
+                    icons={["SiTypescript", "SiReact", "SiPostgresql", "SiExpress", "SiLinux", "SiNextdotjs"]}
+                    thumbnail="thumbnails/chainlink_thumbnail.JPG"
+                    link="https://chainlink.chrisgao.dev"
                     hovered={hoveredArray[2].hovered}
-                    title="Personal Site"
+                    title="Link in Bio App"
                   />
                 </div>
               </div>
@@ -235,6 +247,18 @@ export const Projects = () => {
                     link="https://chriswordleclone.netlify.app/"
                     hovered={hoveredArray[6].hovered}
                     title="Wordle Clone"
+                  />
+                </div>
+                <div style={{ height: "20vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                  <ProjectTile
+                    handleOnHover={handleOnHover}
+                    handleOffHover={handleOffHover}
+                    id={hoveredArray[7].id}
+                    icons={["SiReact", "SiHtml5", "SiCss3", "SiTypescript", "SiMaterialui"]}
+                    thumbnail="thumbnails/personal_website_thumbnail.JPG"
+                    link="https://chrisgao.netlify.app/"
+                    hovered={hoveredArray[7].hovered}
+                    title="Personal Site"
                   />
                 </div>
               </div>
