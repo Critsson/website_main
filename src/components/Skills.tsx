@@ -52,7 +52,7 @@ export const Skills = () => {
           </div>
           <div className="skills_container">
             <SkillSquare shakeDelay={18} flip={flip} id={6} icon="Postgresql" backIcons={["Back End", "Database"]} flipped={flippedArray[6]} />
-            <SkillSquare shakeDelay={42} flip={flip} id={7} icon="Jest" backIcons={["Testing"]} flipped={flippedArray[7]} />
+            <SkillSquare shakeDelay={42} flip={flip} id={7} icon="Linux" backIcons={["Back End", "Database"]} flipped={flippedArray[7]} />
             <SkillSquare shakeDelay={26} flip={flip} id={8} icon="Amazonaws" backIcons={["Cloud", "Database"]} flipped={flippedArray[8]} />
           </div>
         </div>

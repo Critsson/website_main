@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion"
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiExpress, SiNodedotjs, SiJest, SiPostgresql, SiAmazonaws, SiIcloud } from "react-icons/si"
+import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiExpress, SiNodedotjs, SiPostgresql, SiAmazonaws, SiIcloud, SiLinux } from "react-icons/si"
 import { GiTestTubes, GiDatabase } from "react-icons/gi"
 import { HiServerStack } from "react-icons/hi2"
 import { MdOutlineMonitor } from "react-icons/md"
@@ -77,8 +77,8 @@ export const SkillSquare = ({ icon, flipped, id, flip, backIcons, shakeDelay }: 
             iconElement = <SiExpress style={{ width: "4vw", height: "4vw", borderRadius: "4%", color: "#18191F" }} />
         } else if (icon === "Nodedotjs") {
             iconElement = <SiNodedotjs style={{ width: "4vw", height: "4vw", borderRadius: "4%", color: "#18191F" }} />
-        } else if (icon === "Jest") {
-            iconElement = <SiJest style={{ width: "4vw", height: "4vw", borderRadius: "4%", color: "#18191F" }} />
+        } else if (icon === "Linux") {
+            iconElement = <SiLinux style={{ width: "4vw", height: "4vw", borderRadius: "4%", color: "#18191F" }} />
         } else if (icon === "Postgresql") {
             iconElement = <SiPostgresql style={{ width: "4vw", height: "4vw", borderRadius: "4%", color: "#18191F" }} />
         } else if (icon === "Amazonaws") {
@@ -99,8 +99,8 @@ export const SkillSquare = ({ icon, flipped, id, flip, backIcons, shakeDelay }: 
             iconElement = <SiExpress style={{ width: "10vw", height: "10vw", borderRadius: "4%", color: "#18191F" }} />
         } else if (icon === "Nodedotjs") {
             iconElement = <SiNodedotjs style={{ width: "10vw", height: "10vw", borderRadius: "4%", color: "#18191F" }} />
-        } else if (icon === "Jest") {
-            iconElement = <SiJest style={{ width: "10vw", height: "10vw", borderRadius: "4%", color: "#18191F" }} />
+        } else if (icon === "Linux") {
+            iconElement = <SiLinux style={{ width: "10vw", height: "10vw", borderRadius: "4%", color: "#18191F" }} />
         } else if (icon === "Postgresql") {
             iconElement = <SiPostgresql style={{ width: "10vw", height: "10vw", borderRadius: "4%", color: "#18191F" }} />
         } else if (icon === "Amazonaws") {
