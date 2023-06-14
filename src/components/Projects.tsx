@@ -1,6 +1,5 @@
 import React from "react";
 import { ScrollUp } from "./ScrollUp";
-import { motion } from "framer-motion";
 import { ProjectTile } from "./ProjectTile";
 import "../styles/Projects.css";
 import getWindowWidth from "../getWindowWidth";
@@ -15,6 +14,7 @@ export const Projects = () => {
     { id: 5, hovered: false },
     { id: 6, hovered: false },
     { id: 7, hovered: false },
+    { id: 8, hovered: false },
   ]);
   const [windowWidth, setWindowWidth] = React.useState(getWindowWidth());
 
@@ -269,6 +269,32 @@ export const Projects = () => {
                     title="Personal Site"
                   />
                 </div>
+                <div
+                  style={{
+                    height: "20vh",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <ProjectTile
+                    handleOnHover={handleOnHover}
+                    handleOffHover={handleOffHover}
+                    id={hoveredArray[8].id}
+                    icons={[
+                      "SiJavascript",
+                      "SiReact",
+                      "SiNextdotjs",
+                      "SiHtml5",
+                      "SiCss3",
+                      "SiMaterialui",
+                    ]}
+                    thumbnail="thumbnails/parachute_notes_thumbnail.JPG"
+                    link="https://dev.parachutenotes.com/"
+                    hovered={hoveredArray[8].hovered}
+                    title="Accordion Form UI"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -495,6 +521,32 @@ export const Projects = () => {
                     link="https://chrisgao.netlify.app/"
                     hovered={hoveredArray[7].hovered}
                     title="Personal Site"
+                  />
+                </div>
+                <div
+                  style={{
+                    height: "20vh",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <ProjectTile
+                    handleOnHover={handleOnHover}
+                    handleOffHover={handleOffHover}
+                    id={hoveredArray[8].id}
+                    icons={[
+                      "SiJavascript",
+                      "SiReact",
+                      "SiHtml5",
+                      "SiCss3",
+                      "SiMaterialui",
+                      "SiNextdotjs",
+                    ]}
+                    thumbnail="thumbnails/personal_website_thumbnail.JPG"
+                    link="https://climbgg.netlify.app/"
+                    hovered={hoveredArray[8].hovered}
+                    title="Accordion Form UI"
                   />
                 </div>
               </div>
